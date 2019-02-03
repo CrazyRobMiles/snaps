@@ -1,0 +1,342 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{9C84EC7D-C4FB-44B3-B6FB-E68E43689CAF}</ProjectGuid>
+    <OutputType>AppContainerExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BeginToCodeWithCSharp</RootNamespace>
+    <AssemblyName>BeginToCodeWithCSharp</AssemblyName>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
+    <TargetPlatformVersion>10.0.10586.0</TargetPlatformVersion>
+    <TargetPlatformMinVersion>10.0.10240.0</TargetPlatformMinVersion>
+    <MinimumVisualStudioVersion>14</MinimumVisualStudioVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{A5A43C5B-DE2A-4C0C-9213-0A381AF9435A};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <PackageCertificateKeyFile>BeginToCodeWithCSharp_TemporaryKey.pfx</PackageCertificateKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|ARM'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\ARM\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|ARM'">
+    <OutputPath>bin\ARM\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <ItemGroup>
+    <!-- A reference to the entire .Net Framework and Windows SDK are automatically included -->
+    <None Include="project.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Chapters\Chapter 01\Ch01_01_MyProgramTemplate.cs" />
+    <Compile Include="Chapters\Chapter 02\Ch02_01_MysteryProgram1.cs" />
+    <Compile Include="Chapters\Chapter 02\Ch02_02_MysteryProgram2.cs" />
+    <Compile Include="Chapters\Chapter 03\Ch03_01_WelcomeProgram.cs" />
+    <Compile Include="Chapters\Chapter 03\Ch03_02_MoreStatements.cs" />
+    <Compile Include="Chapters\Chapter 03\Ch03_03_Speaking.cs" />
+    <Compile Include="Chapters\Chapter 03\Ch03_04_DoubleOutput.cs" />
+    <Compile Include="Chapters\Chapter 03\Ch03_05_DoubleOutputFixed.cs" />
+    <Compile Include="Chapters\Chapter 03\Ch03_06_TenSecondTimer.cs" />
+    <Compile Include="Chapters\Chapter 03\Ch03_07_BlueText.cs" />
+    <Compile Include="Chapters\Chapter 03\Ch03_08_DelayedBlueText.cs" />
+    <Compile Include="Chapters\Chapter 03\Ch03_09_GreenSystemStarting.cs" />
+    <Compile Include="Chapters\Chapter 03\Ch03_10_RedScreen.cs" />
+    <Compile Include="Chapters\Chapter 03\Ch03_11_LilacScreen.cs" />
+    <Compile Include="Chapters\Chapter 03\Ch03_12_Egg_Timer_Start.cs" />
+    <Compile Include="Chapters\Chapter 04\Ch04_01_SimpleVariable.cs" />
+    <Compile Include="Chapters\Chapter 04\Ch04_05_SmoothAnnouncer.cs" />
+    <Compile Include="Chapters\Chapter 04\Ch04_04_StiltedAnnouncer.cs" />
+    <Compile Include="Chapters\Chapter 04\Ch04_02_ReadingAString.cs" />
+    <Compile Include="Chapters\Chapter 04\Ch04_03_SingleLineVersion.cs" />
+    <Compile Include="Chapters\Chapter 04\Ch04_08_FloatCentigrade.cs" />
+    <Compile Include="Chapters\Chapter 04\Ch04_07_CentigradeAndFahrenheit.cs" />
+    <Compile Include="Chapters\Chapter 04\Ch04_11_Dice.cs" />
+    <Compile Include="Chapters\Chapter 04\Ch04_06_TimeDisplay.cs" />
+    <Compile Include="Chapters\Chapter 04\Ch04_10_WeatherConditionsDisplay.cs" />
+    <Compile Include="Chapters\Chapter 04\Ch04_09_TemperatureDisplay.cs" />
+    <Compile Include="Chapters\Chapter 05\Ch05_11_WhenIsThisMessagePrinted.cs" />
+    <Compile Include="Chapters\Chapter 05\Ch05_10_WeekendAlarm.cs" />
+    <Compile Include="Chapters\Chapter 05\Ch05_07_HelloGreatOne.cs" />
+    <Compile Include="Chapters\Chapter 05\Ch05_06_IsItSaturday.cs" />
+    <Compile Include="Chapters\Chapter 05\Ch05_04_IsItNineOclock.cs" />
+    <Compile Include="Chapters\Chapter 05\Ch05_03_GetUpDeciderWithElse.cs" />
+    <Compile Include="Chapters\Chapter 05\Ch05_02_SimplifiedGetUpAlarm.cs" />
+    <Compile Include="Chapters\Chapter 05\Ch05_01_GetUpAlarm.cs" />
+    <Compile Include="Chapters\Chapter 05\Ch05_14_ReadAge.cs" />
+    <Compile Include="Chapters\Chapter 05\Ch05_17_CityImage.cs" />
+    <Compile Include="Chapters\Chapter 05\Ch05_05_NumberCompare.cs" />
+    <Compile Include="Chapters\Chapter 05\Ch05_08_GreatOneUpperCase.cs" />
+    <Compile Include="Chapters\Chapter 05\Ch05_09_ColorfulGreeter.cs" />
+    <Compile Include="Chapters\Chapter 05\Ch05_12_SelectFunfairRide.cs" />
+    <Compile Include="Chapters\Chapter 05\Ch05_13_HandleRiverCruise.cs" />
+    <Compile Include="Chapters\Chapter 05\Ch05_15_CompleteFunfairProgram.cs" />
+    <Compile Include="Chapters\Chapter 05\Ch05_16_SoundEffects.cs" />
+    <Compile Include="Chapters\Chapter 05\Ch05_18_BridgeImage.cs" />
+    <Compile Include="Chapters\Chapter 06\Ch06_02_AgeReader.cs" />
+    <Compile Include="Chapters\Chapter 06\Ch06_08_MissOutFour.cs" />
+    <Compile Include="Chapters\Chapter 06\Ch06_09_VoicePizzaPicker.cs" />
+    <Compile Include="Chapters\Chapter 06\Ch06_01_PizzaPicker.cs" />
+    <Compile Include="Chapters\Chapter 06\Ch06_03_BadAgeReader.cs" />
+    <Compile Include="Chapters\Chapter 06\Ch06_04_TalkingTimesTables.cs" />
+    <Compile Include="Chapters\Chapter 06\Ch06_05_RepeatingTimesTables.cs" />
+    <Compile Include="Chapters\Chapter 06\Ch06_06_ForTimesTable.cs" />
+    <Compile Include="Chapters\Chapter 06\Ch06_07_TapScreenToStop.cs" />
+    <Compile Include="Chapters\Chapter 07\Ch07_01_UnworkableSales.cs" />
+    <Compile Include="Chapters\Chapter 07\Ch07_02_ArrayExceptions.cs" />
+    <Compile Include="Chapters\Chapter 07\Ch07_03_ForLoopStorage.cs" />
+    <Compile Include="Chapters\Chapter 07\Ch07_04_VariableArraySizes.cs" />
+    <Compile Include="Chapters\Chapter 07\Ch07_05_BadlyNumberedStand.cs" />
+    <Compile Include="Chapters\Chapter 07\Ch07_06_ProperlyNumberedstand.cs" />
+    <Compile Include="Chapters\Chapter 07\Ch07_07_ReadAndDisplay.cs" />
+    <Compile Include="Chapters\Chapter 07\Ch07_08_BubbleSortDemo.cs" />
+    <Compile Include="Chapters\Chapter 07\Ch07_09_BubbleSortWorking.cs" />
+    <Compile Include="Chapters\Chapter 07\Ch07_10_BubbleSortPerformance.cs" />
+    <Compile Include="Chapters\Chapter 07\Ch07_11_HighestAndLowest.cs" />
+    <Compile Include="Chapters\Chapter 07\Ch07_12_TotalSales.cs" />
+    <Compile Include="Chapters\Chapter 07\Ch07_13_CompleteProgram.cs" />
+    <Compile Include="Chapters\Chapter 07\Ch07_14_WeeklySalesProgram.cs" />
+    <Compile Include="Chapters\Chapter 07\Ch07_15_WeeklySalesProgramTotal.cs" />
+    <Compile Include="Chapters\Chapter 07\Ch07_16_WeeklySalesProgramTotalTest.cs" />
+    <Compile Include="Chapters\Chapter 07\Ch07_17_WeeklySalesProgramTotalAutoSize.cs" />
+    <Compile Include="Chapters\Chapter 07\Ch07_18_DayNames.cs" />
+    <Compile Include="Chapters\Chapter 08\Ch08_04_AlertLevel.cs" />
+    <Compile Include="Chapters\Chapter 08\Ch08_06_GetValue.cs" />
+    <Compile Include="Chapters\Chapter 08\Ch08_01_GreetingMethod.cs" />
+    <Compile Include="Chapters\Chapter 08\Ch08_02_ProgramPathfinder.cs" />
+    <Compile Include="Chapters\Chapter 08\Ch08_03_Alert.cs" />
+    <Compile Include="Chapters\Chapter 08\Ch08_05_WhatWouldIDo.cs" />
+    <Compile Include="Chapters\Chapter 08\Ch08_08_TinyContactBookLocalStore.cs" />
+    <Compile Include="Chapters\Chapter 08\Ch08_09_TinyContactBookRoamingStore.cs" />
+    <Compile Include="Chapters\Chapter 09\Ch09_01_PlaySomeNotes.cs" />
+    <Compile Include="Chapters\Chapter 09\Ch09_02_PlayNotesWithArrays.cs" />
+    <Compile Include="Chapters\Chapter 09\Ch09_13_MysteryImageNoControlMenu.cs" />
+    <Compile Include="Chapters\Chapter 09\Ch09_20_PickImage.cs" />
+    <Compile Include="Chapters\Chapter 09\Ch09_03_PlayNotesFromStructureArray.cs" />
+    <Compile Include="Chapters\Chapter 09\Ch09_04_RandomMusic.cs" />
+    <Compile Include="Chapters\Chapter 09\Ch09_05_KeyboardCatAlarm.cs" />
+    <Compile Include="Chapters\Chapter 09\Ch09_06_ConstructingSongNotes.cs" />
+    <Compile Include="Chapters\Chapter 09\Ch09_08_PresetMusic.cs" />
+    <Compile Include="Chapters\Chapter 09\Ch09_07_MusicRecorder.cs" />
+    <Compile Include="Chapters\Chapter 09\Ch09_09_NotePlay.cs" />
+    <Compile Include="Chapters\Chapter 09\Ch09_10_DrawADot.cs" />
+    <Compile Include="Chapters\Chapter 09\Ch09_11_SimpleDraw.cs" />
+    <Compile Include="Chapters\Chapter 09\Ch09_12_MysteryImage.cs" />
+    <Compile Include="Chapters\Chapter 09\Ch09_14_DrawingClear.cs" />
+    <Compile Include="Chapters\Chapter 09\Ch09_16_TapDraw.cs" />
+    <Compile Include="Chapters\Chapter 09\Ch09_17_DrawLineDemo.cs" />
+    <Compile Include="Chapters\Chapter 09\Ch09_18_TapLine.cs" />
+    <Compile Include="Chapters\Chapter 09\Ch09_19_StarMaker.cs" />
+    <Compile Include="Chapters\Chapter 09\Ch09_15_DrawEnum.cs" />
+    <Compile Include="Chapters\Chapter 10\Ch10_01_ContactStructure.cs" />
+    <Compile Include="Chapters\Chapter 10\Ch10_02_CupCakeStructureWithThis.cs" />
+    <Compile Include="Chapters\Chapter 10\Ch10_03_TimeTracker.cs" />
+    <Compile Include="Chapters\Chapter 10\Ch10_04_TimeTrackerClass.cs" />
+    <Compile Include="Chapters\Chapter 10\Ch10_05_JsonDemo.cs" />
+    <Compile Include="Chapters\Chapter 10\Ch10_06_TimeTrackerJson.cs" />
+    <Compile Include="Chapters\Chapter 10\Ch10_07_PizzaPicker.cs" />
+    <Compile Include="Chapters\Chapter 10\Ch10_08_RSSReader.cs" />
+    <Compile Include="Chapters\Chapter 10\Ch10_09_RSSTitles.cs" />
+    <Compile Include="Chapters\Chapter 11\Ch11_01_PublicMenace.cs" />
+    <Compile Include="Chapters\Chapter 11\Ch11_02_PrivateMinutesSpent.cs" />
+    <Compile Include="Chapters\Chapter 11\Ch11_03_PropertyDemo.cs" />
+    <Compile Include="Chapters\Chapter 11\Ch11_04_CatchException.cs" />
+    <Compile Include="Chapters\Chapter 11\Ch11_05_TimeTrackerFriendly.cs" />
+    <Compile Include="Chapters\Chapter 11\Ch11_06_SaveGraphics.cs" />
+    <Compile Include="Chapters\Chapter 11\Ch11_07_SaveGraphicsLocal.cs" />
+    <Compile Include="Chapters\Chapter 11\Ch11_08_LoadGraphicsLocal.cs" />
+    <Compile Include="Chapters\Chapter 11\Ch11_09_DigitalClock.cs" />
+    <Compile Include="Chapters\Chapter 11\Ch11_10_DigitalClockNoFade.cs" />
+    <Compile Include="Chapters\Chapter 11\Ch11_11_DrawingDiary.cs" />
+    <Compile Include="Chapters\Chapter 11\Ch11_12_MustacheMachine.cs" />
+    <Compile Include="Chapters\Chapter 12\Ch12_01_EmptyGame.cs" />
+    <Compile Include="Chapters\Chapter 12\Ch12_02_BallSprite.cs" />
+    <Compile Include="Chapters\Chapter 12\Ch12_03_SquishyBall.cs" />
+    <Compile Include="Chapters\Chapter 12\Ch12_04_ScaledCity.cs" />
+    <Compile Include="Chapters\Chapter 12\Ch12_05_BallSpriteTwentieth.cs" />
+    <Compile Include="Chapters\Chapter 12\Ch12_06_BallSpriteFullScreen.cs" />
+    <Compile Include="Chapters\Chapter 12\Ch12_07_FlickingSprite.cs" />
+    <Compile Include="Chapters\Chapter 12\Ch12_08_MovingSprite.cs" />
+    <Compile Include="Chapters\Chapter 12\Ch12_09_BouncingSprite.cs" />
+    <Compile Include="Chapters\Chapter 13\Ch13_01_SpriteAndPaddle.cs" />
+    <Compile Include="Chapters\Chapter 13\Ch13_02_SpriteAndMovingPaddle.cs" />
+    <Compile Include="Chapters\Chapter 13\Ch13_03_SpriteAndPaddleClamped.cs" />
+    <Compile Include="Chapters\Chapter 13\Ch13_04_HittingTheBall.cs" />
+    <Compile Include="Chapters\Chapter 13\Ch13_05_HittingTheBallWithSound.cs" />
+    <Compile Include="Chapters\Chapter 13\Ch13_06_DisplayingText.cs" />
+    <Compile Include="Chapters\Chapter 13\Ch13_07_HypnoticText.cs" />
+    <Compile Include="Chapters\Chapter 13\Ch13_08_KeepUpGame.cs" />
+    <Compile Include="Chapters\Chapter 13\Ch13_09_RandomStartKeepUpGame.cs" />
+    <Compile Include="Chapters\Chapter 14\Ch14_01_MovingSprite.cs" />
+    <Compile Include="Chapters\Chapter 14\Ch14_02_SingleFallingStar.cs" />
+    <Compile Include="Chapters\Chapter 14\Ch14_03_Starfield.cs" />
+    <Compile Include="Chapters\Chapter 14\Ch14_04_FlyingRocket.cs" />
+    <Compile Include="Chapters\Chapter 14\Ch14_05_ChasingAlien.cs" />
+    <Compile Include="Chapters\Chapter 14\Ch14_06_ChasingAndTargetAliens.cs" />
+    <Compile Include="Chapters\Chapter 14\Ch14_07_WorkInProgress.cs" />
+    <Compile Include="Chapters\Chapter 15\Ch15_01_TakeDamage.cs" />
+    <Compile Include="Chapters\Chapter 15\Ch15_02_GameClass.cs" />
+    <Compile Include="Chapters\Chapter 15\Ch15_03_GameOver.cs" />
+    <Compile Include="Chapters\Chapter 15\Ch15_04_CompleteGame.cs" />
+    <Compile Include="Chapters\Chapter 15\Ch15_05_InterfaceSprites.cs" />
+    <Compile Include="MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="My Snaps apps\MyProgram.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppxManifest Include="Package.appxmanifest">
+      <SubType>Designer</SubType>
+    </AppxManifest>
+    <None Include="BeginToCodeWithCSharp_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\ball.png" />
+    <Content Include="Images\BlackKey.png" />
+    <Content Include="Images\blueBall.png" />
+    <Content Include="Images\Cheese.png" />
+    <Content Include="Images\City.jpg" />
+    <Content Include="Images\Clouds.PNG" />
+    <Content Include="Images\GreenAlien.png" />
+    <Content Include="Images\greenBall.png" />
+    <Content Include="Images\ImageNotFound.png" />
+    <Content Include="Images\Key.png" />
+    <Content Include="Images\LittleGreenAlien.png" />
+    <Content Include="Images\lpaddle.png" />
+    <Content Include="Images\Missile.png" />
+    <Content Include="Images\paddle.png" />
+    <Content Include="Images\Pizza.PNG" />
+    <Content Include="Images\PongBackground.jpg" />
+    <Content Include="Images\PurpleAlien.png" />
+    <Content Include="Images\redBall.png" />
+    <Content Include="Images\rpaddle.png" />
+    <Content Include="Images\SpaceRocket.png" />
+    <Content Include="Images\SpaceRocketsInSpaceGameOverScreen.png" />
+    <Content Include="Images\SpaceRocketsInSpaceTitleScreen.png" />
+    <Content Include="Images\Squares.PNG" />
+    <Content Include="Images\Star.png" />
+    <Content Include="Images\yellowBall.png" />
+    <Content Include="Properties\Default.rd.xml" />
+    <Content Include="Assets\LockScreenLogo.scale-200.png" />
+    <Content Include="Assets\SplashScreen.scale-200.png" />
+    <Content Include="Assets\Square150x150Logo.scale-200.png" />
+    <Content Include="Assets\Square44x44Logo.scale-200.png" />
+    <Content Include="Assets\Square44x44Logo.targetsize-24_altform-unplated.png" />
+    <Content Include="Assets\StoreLogo.png" />
+    <Content Include="Assets\Wide310x150Logo.scale-200.png" />
+    <Content Include="Sounds\MusicNotes\a.wav" />
+    <Content Include="Sounds\MusicNotes\asharp.wav" />
+    <Content Include="Sounds\MusicNotes\b.wav" />
+    <Content Include="Sounds\MusicNotes\c1.wav" />
+    <Content Include="Sounds\MusicNotes\c2.wav" />
+    <Content Include="Sounds\MusicNotes\csharp.wav" />
+    <Content Include="Sounds\MusicNotes\d.wav" />
+    <Content Include="Sounds\MusicNotes\dsharp.wav" />
+    <Content Include="Sounds\MusicNotes\e.wav" />
+    <Content Include="Sounds\MusicNotes\f.wav" />
+    <Content Include="Sounds\MusicNotes\fsharp.wav" />
+    <Content Include="Sounds\MusicNotes\g.wav" />
+    <Content Include="Sounds\MusicNotes\gsharp.wav" />
+    <Content Include="Sounds\SoundEffects\beep.wav" />
+    <Content Include="Sounds\SoundEffects\ding.wav" />
+    <Content Include="Sounds\SoundEffects\gameOver.wav" />
+    <Content Include="Sounds\SoundEffects\lose.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Page Include="MainPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Snaps\Snaps\Snaps.csproj">
+      <Project>{035961d1-c3b2-4eb9-8d2b-b5832f80aef2}</Project>
+      <Name>Snaps</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="My Snaps apps\Drawing\" />
+  </ItemGroup>
+  <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
+    <VisualStudioVersion>14.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\WindowsXaml\v$(VisualStudioVersion)\Microsoft.Windows.UI.Xaml.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

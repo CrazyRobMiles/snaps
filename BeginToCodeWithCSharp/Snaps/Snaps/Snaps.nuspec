@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>SnapsLibrary</id>
+    <version>1.4</version>
+    <title>SNAPS Library for Learning to Program</title>
+    <authors>Rob Miles</authors>
+    <owners>Rob Miles</owners>
+    <projectUrl>http://www.robmiles.com/snaps/</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>SNAPS library used in the text 'Begin to code with C#'</description>
+    <releaseNotes>First alpha release.</releaseNotes>
+    <copyright>Copyright 2016</copyright>
+    <tags>Utilties Teaching</tags>
+    <dependencies> 
+       <dependency id="Newtonsoft.Json" version="8.0.2"/>
+    </dependencies>
+  </metadata>
+</package>
