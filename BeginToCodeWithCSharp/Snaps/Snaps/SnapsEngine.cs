@@ -764,41 +764,6 @@ namespace SnapsLibrary
             return manager.SelectFromButtonArray(new string[] { item1, item2, item3, item4, item5, item6 });
         }
 
-        /// <summary>
-        /// Writes to a GPIO pin on a Raspberry Pi
-        /// Will throw an exception if the program is not running on a Pi or
-        /// an invalid pin number is used. 
-        /// </summary>
-        /// <param name="pinNumber">number of the selected pin</param>
-        /// <param name="value">true to make the pin high, false to make it low</param>
-        public static void WriteToPin(int pinNumber, bool value)
-        {
-            manager.WriteToPin(pinNumber, value);
-        }
-
-        /// <summary>
-        /// Read from GPIO pin on a Rasperry Pi
-        /// Will throw an exception if the program is not running on a Pi 
-        /// or an invalid pin number is used. 
-        /// </summary>
-        /// <param name="pinNumber">number of the pin to read</param>
-        /// <returns>true if the pin is high and false if it is low</returns>
-        public static bool ReadFromPin(int pinNumber)
-        {
-            return manager.ReadFromPin(pinNumber);
-        }
-
-        /// <summary>
-        /// Pauses the program until the given GPIO pin becomes high.
-        /// Will throw an exception if the program is not running on a Pi 
-        /// or an invalid pin number is used. 
-        /// </summary>
-        /// <param name="pinNumber">pin number to wait for</param>
-        public static void WaitForPinHigh(int pinNumber)
-        {
-            manager.WaitForPinHigh(pinNumber);
-        }
-
         #region Game Engine 
 
         /// <summary>

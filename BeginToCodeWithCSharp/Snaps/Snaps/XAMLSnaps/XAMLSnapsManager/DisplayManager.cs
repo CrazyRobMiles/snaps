@@ -165,7 +165,6 @@ namespace XAMLSnaps
         SoundAndSpeech soundAndSpeech;
         TapDetection tapDetection;
         TouchInputCanvas touchInput;
-        GPIOSnap gpioSnap;
 
         // Buttons and text are displayed in the same panel by default
         ButtonPanel buttonPanel = null;
@@ -229,14 +228,6 @@ namespace XAMLSnaps
             touchInput = new TouchInputCanvas(this);
             PlaceDisplayElement(touchInput, row: 0, column: 0, rowSpan: 4, columnSpan: 2);
             clearableComponents.Add(touchInput);
-
-            try {
-                gpioSnap = new GPIOSnap();
-            }
-            catch
-            {
-                gpioSnap = null;
-            }
 
         }
 
@@ -654,25 +645,6 @@ namespace XAMLSnaps
             );
 
             fadeCompleteEvent.WaitOne();
-        }
-
-        #endregion
-
-        #region GPIO
-
-        public void WriteToPin(int pinNumber, bool value)
-        {
-            gpioSnap.WriteToPin(pinNumber, value);
-        }
-
-        public bool ReadFromPin(int pinNumber)
-        {
-            return gpioSnap.ReadFromPin(pinNumber);
-        }
-
-        public void WaitForPinHigh(int pinNumber)
-        {
-            gpioSnap.WaitForPinHigh(pinNumber);
         }
 
         #endregion

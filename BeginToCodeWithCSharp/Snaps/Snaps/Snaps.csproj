@@ -107,7 +107,6 @@
     <None Include="project.json" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="IoTSnaps\GPIOSnaps.cs" />
     <Compile Include="NativeSnaps\DateAndTime.cs" />
     <Compile Include="NativeSnaps\Dice.cs" />
     <Compile Include="NativeSnaps\ReadFloat.cs" />
@@ -148,11 +147,6 @@
     <Compile Include="XAMLSnaps\Utilitiy\TakePhotograph.cs" />
     <Compile Include="XAMLSnaps\XAMLSnapsManager\XAMLSnapsManager.cs" />
     <Content Include="Properties\Snaps.rd.xml" />
-  </ItemGroup>
-  <ItemGroup>
-    <SDKReference Include="WindowsIoT, Version=10.0.10586.0">
-      <Name>Windows IoT Extensions for the UWP</Name>
-    </SDKReference>
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
